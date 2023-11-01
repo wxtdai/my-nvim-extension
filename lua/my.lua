@@ -17,3 +17,6 @@ vim.opt.smartindent = true -- インデントをスマートに調整する
 vim.opt.number = true -- 行番号を表示
 -- vim.opt.relativenumber = true -- 相対行番号を表示
 vim.opt.showmatch = true -- 対応する括弧をハイライト表示
+
+-- yank
+vim.opt.clipboard:append { "unnamed" } -- yankとクリップボードが対応する(set clipboard+=unnamed に相当)
