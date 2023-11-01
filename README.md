@@ -2,3 +2,5 @@
 
 - brew tap daipeihust/tap
 - brew install im-select
+
+このリポジトリを .configでcloneしてきて、cloneしてきたディレクトリ名をnvimに変えましょう。
