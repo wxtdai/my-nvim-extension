@@ -1,9 +1,5 @@
 require("my")
 
--- require('im_select').setup {
---     default_im_select = "com.google.inputmethod.Japanese.Roman"
--- }
-
 -- lazy.nvimのインストール
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
