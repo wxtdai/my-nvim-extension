@@ -24,3 +24,7 @@ vim.opt.showmatch = true -- 対応する括弧をハイライト表示
 
 -- yank
 vim.opt.clipboard:append { "unnamed" } -- yankとクリップボードが対応する(set clipboard+=unnamed に相当)
+
+-- keyset
+vim.keymap.set("i", "<C-a>", "<C-o>0") -- emacs風の行頭への移動 ※既存のショートカットを上書き
+vim.keymap.set("i", "<C-d>", "<Del>") -- emacs風の右の文字の削除 ※既存のショートカットを上書き 
