@@ -2,9 +2,14 @@
 
 vim.scriptencoding = "utf-8"
 
+if not vim.g.vscode then
+    vim.opt.number = true -- 行番号を表示
+    vim.opt.cursorline = true -- 十分動いたときにカーソルの動きを可視化
+    vim.opt.incsearch = true -- インクリメンタルサーチを有効
+    vim.opt.hlsearch = true -- ハイライト検索を有効
+end
+
 -- 検索・置換え
-vim.opt.hlsearch = true -- ハイライト検索を有効
-vim.opt.incsearch = true -- インクリメンタルサーチを有効
 
 -- インデント
 vim.opt.shiftwidth = 4 -- シフト幅を4に設定する
@@ -14,7 +19,6 @@ vim.opt.autoindent = true -- 自動インデントを有効にする
 vim.opt.smartindent = true -- インデントをスマートに調整する
 
 -- 表示
-vim.opt.number = true -- 行番号を表示
 -- vim.opt.relativenumber = true -- 相対行番号を表示
 vim.opt.showmatch = true -- 対応する括弧をハイライト表示
 
